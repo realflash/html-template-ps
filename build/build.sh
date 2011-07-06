@@ -1,7 +1,7 @@
 #!/bin/bash
 DIR="HTMLTemplate"
 NAME="html-template-ps"
-VERSION="0.1.1"
+VERSION="0.2"
 OUT="$NAME-v$VERSION.zip"
 
 function make
@@ -16,7 +16,7 @@ function make
 	}
 	fi
 
-	cp -r ../source $DIR
+	cp -r ../source/* $DIR
 	cp -r ../aux/* $DIR
 
 	zip -9 $OUT $DIR
