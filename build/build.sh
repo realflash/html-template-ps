@@ -1,7 +1,7 @@
 #!/bin/bash
 DIR="HTMLTemplate"
 NAME="html-template-ps"
-VERSION="0.2"
+VERSION="0.2.1"
 OUT="$NAME-v$VERSION.zip"
 
 function make
@@ -35,6 +35,7 @@ if [[ "$1" == "clean" || "$1" == "CLEAN" ]]; then
 }
 else
 {
+	clean
 	make
 }
 fi
