@@ -1,0 +1,11 @@
+<html>
+  <head><title>List of Fruit</title>
+  <body>
+    My favourite fruit is <TMPL_VAR NAME="FAVOURITE">.<TMPL_UNLESS NAME="HAVE_APPLE"> Yay! I have one.<TMPL_ELSE> I wish had one.</TMPL_UNLESS><br/>
+    <br/>
+    <table border="1">
+      <tr><th>Name</th><th>Colour</th></tr>
+<TMPL_LOOP NAME="FRUIT">      <tr><td><TMPL_VAR NAME="NAME"></td><td><TMPL_VAR NAME="COLOUR"></td></tr>
+</TMPL_LOOP>    </table>
+  </body>
+</html>

@@ -19,7 +19,7 @@ function make
 	cp -r ../source/* $DIR
 	cp -r ../aux/* $DIR
 
-	zip -9 $OUT $DIR
+	zip -9 -r $OUT $DIR
 
 }
 
