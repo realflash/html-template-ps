@@ -1,7 +1,7 @@
 #!/bin/bash
 DIR="HTMLTemplate"
 NAME="html-template-ps"
-VERSION="0.2.2"
+VERSION="0.2.3"
 OUT="$NAME-v$VERSION.zip"
 
 function make
